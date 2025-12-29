@@ -8,11 +8,8 @@ public class collideDestroy : MonoBehaviour
         objectToDestroy.SetActive(true);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider Player)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            objectToDestroy.SetActive(false);
-        }   
+        Destroy(objectToDestroy);
     }
 }
