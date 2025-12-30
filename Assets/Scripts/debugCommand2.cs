@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class debugCommand2 : MonoBehaviour , IInteractable
 {
+    public string message;
     public void Interact()
     {
-        Debug.Log("Cube 2 Sucessfully Interacted With and destroyed");
+        Debug.Log(message);
         gameObject.SetActive(false);
     }
 }

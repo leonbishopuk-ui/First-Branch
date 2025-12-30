@@ -9,7 +9,6 @@ public class textDisplayer : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log(text);
         textDisplay.text = text;
     }
 }

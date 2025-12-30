@@ -6,10 +6,11 @@ public class moveObject : MonoBehaviour, IInteractable
     [SerializeField] private Transform targetPosition;
     public float speed;
     private bool isMoving = false;
+    public string message;
 
     public void Interact()
     {
-        Debug.Log("Moving Object");
+        Debug.Log(message);
         isMoving = true;
     }
 
