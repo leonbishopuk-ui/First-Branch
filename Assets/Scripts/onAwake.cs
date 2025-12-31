@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class onAwake : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class onAwake : MonoBehaviour
    [Header("Text Settings")]
    [SerializeField] private string textToDisplay;
     [SerializeField] private TMPro.TMP_Text textDisplay;
+    [SerializeField] private float fontSize;
 
     [Header("VFX Settings")]
     [SerializeField] private GameObject vfxToDestroy;
